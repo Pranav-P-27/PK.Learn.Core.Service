@@ -1,0 +1,6 @@
+@PK.Learn.Core.Service_HostAddress = http://localhost:5041
+
+GET {{PK.Learn.Core.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
