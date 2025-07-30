@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PK.Learn.Core.Service.Models;
 
-namespace PK.Learn.Core.Service.Controllers
+namespace PK.Learn.Core.Service.Controllers;
+
+[ApiController]
+[Route("api")]
+public class StudentsController : Controller
 {
-    public class StudentsController : Controller
+    public IActionResult Index()
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        return View();
+    }
 
-        public void GetStudentById(int id,string name)
-        {
+    public void GetStudentById(int id, string name)
+    {
 
 
-        }
     }
 }
